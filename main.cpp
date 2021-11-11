@@ -8,7 +8,7 @@ int main()
 
     std::cout<<"There are "<<Point2D::s_counter<<" objects now\n";
     point1.setX(3.4);
-    // point1.setY(5.6);
+    point1.setY(5.6);
     point1.print();
     // point2.print();
 
