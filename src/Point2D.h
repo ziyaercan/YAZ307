@@ -4,12 +4,11 @@
 #include <iostream>
 class Point2D
 {
-    double m_x;
-    double m_y;
-    
-    public:
-
+    private:
+        double m_x;
+        double m_y;
         static int s_counter;
+    public:
 
         Point2D(): m_x{2.0}, m_y{3.0}
         {
@@ -24,6 +23,7 @@ class Point2D
         ~Point2D()
         {
             std::cout<<"The object is destructed\n";
+            s_counter--;
         }
 
         void print();
@@ -33,7 +33,14 @@ class Point2D
         void setX(const double x) {m_x = x;}
         void setY(const double m_y) {this->m_y = m_y;}
 
+        static int getCounter() {return s_counter;}
+
         double getDistance(const Point2D& point2);
+
+        Point2D operator-(const Point2D& point2);
+
+        friend void resetPoint2D(Point2D& point);
+        friend Point2D operator+(const Point2D& point1, const Point2D& point2);
 };
 
 #endif
