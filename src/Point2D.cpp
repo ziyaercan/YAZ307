@@ -8,6 +8,7 @@ void Point2D::print()
 
 double Point2D::getDistance(const Point2D& point2)
 {
+    
     return sqrt(pow(this->m_x-point2.getX(),2) + pow(this->m_y - point2.getY(),2));
 }
 

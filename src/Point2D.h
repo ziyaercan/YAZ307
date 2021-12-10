@@ -29,8 +29,17 @@ class Point2D
         void print();
         double getX() const { return m_x;}
         double getY() const { return m_y;}
-
+        /**
+         * @brief Setter function for coordinate X
+         * 
+         * @param x The X-coordinate
+         */
         void setX(const double x) {m_x = x;}
+        /**
+         * @brief Setter function for coordinate Y
+         * 
+         * @param m_y The Y-coordinate
+         */
         void setY(const double m_y) {this->m_y = m_y;}
 
         static int getCounter() {return s_counter;}
