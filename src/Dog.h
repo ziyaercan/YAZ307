@@ -12,6 +12,7 @@ class Dog : public Animal
         static int s_counter;
 
     public:
+        Dog() = default;
         Dog(std::string name, 
             int age, 
             bool isFemale,

@@ -33,7 +33,7 @@ class Cat : public Animal
 
         static int getCounter() {return s_counter;}
         void print(int);
-        virtual void print();
+        virtual void print() override;
         virtual void speak();
 
 };

@@ -9,9 +9,5 @@ void Animal::print()
 
 }
 
-void Animal::speak()
-{
-    std::cout<<"?????\n";
-}
 
 int Animal::s_counter{0};

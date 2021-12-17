@@ -51,7 +51,7 @@ class Animal
         int getAge() const { return m_age;}
         bool isFemale() const {return m_isFemale;}
         std::string getFamily() const { return m_family;}
-        virtual void speak();
+        virtual void speak()=0;
         static int getCounter() {return s_counter;}
 
 };
